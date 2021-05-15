@@ -18,21 +18,90 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
+    <!--Header-->
+
     <div class="container">
-      <!-- Timeblocks go here -->
+        <header class="jumbotron">
+            <h1 class="display-3">Work Day Scheduler</h1>
+            <p class="lead">A simple calendar app for scheduling your work day</p>
+            <p id="currentDay" class="lead"></p>
+          </header>
+
+    <!--Timeblock code-->
+
+        <div class="container">
+            <div class="row">
+              <div class="hour col-1">
+                9AM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                10AM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                11AM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+         
+             <div class="hour col-1">
+                12PM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                1PM
+              </div>      <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                2PM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                3PM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                4PM
+              </div>
+              <input class="task col-8" type="text" id="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
+            <div class="row">
+              <div class="hour col-1">
+                5PM
+              </div>
+              <input class="task col-8" type="task">
+              <button class="save col-1"><i class="fa fa-save"></i></button>
+            </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
