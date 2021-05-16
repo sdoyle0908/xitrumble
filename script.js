@@ -16,4 +16,10 @@ $(document).ready(function () {
 
 function trackHours() {
   var currentTime = moment().hour();
+
+  // loop
+
+  $(".time-block").each(function () {
+    var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
+  });
 }
