@@ -5,8 +5,7 @@ $(document).ready(function () {
   $("#currentDay").html(todayDate);
 
   // Save button & click event
-
-  $(document).ready(function () {
+  $(".saveBtn").on("click", function () {
     var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
@@ -19,27 +18,25 @@ $(document).ready(function () {
     // loop
 
     $(".time-block").each(function () {
-      var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
+      var thisHour = parseInt($(this).attr("id").split("hr")[1]);
 
       // time checker for past, present or future
 
-      if (hourBlock < currentTime) {
+      $(this).removeClass("past");
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+
+      if (thisHour < currentTime) {
         $(this).addClass("past");
-        $(this).removeClass("future");
-        $(this).removeClass("present");
-      } else if (hourBlock === currentTime) {
-        $(this).removeClass("past");
+      } else if (thisHour === currentTime) {
         $(this).addClass("present");
-        $(this).removeClass("future");
       } else {
-        $(this).removeClass("present");
-        $(this).removeClass("past");
         $(this).addClass("future");
       }
     });
   }
 
-  $("#hour8 .description").val(localStorage.getItem("hour8"));
+  // get item from local storage
   $("#hour9 .description").val(localStorage.getItem("hour9"));
   $("#hour10 .description").val(localStorage.getItem("hour10"));
   $("#hour11 .description").val(localStorage.getItem("hour11"));
