@@ -1,6 +1,6 @@
 # Third-Party APIs Challenge: Work Day Scheduler
 
-For this weeks challenge we were given an assignment to create a simple calendar application that allows a user to save events for each hour of the day using HTML, CSS and jQuery as well as the Moments.js library to work with date and time.
+For this weeks challenge we were given an assignment to create a simple calendar application that allows a user to save events for each hour of the day using HTML, CSS, Bootstrap, jQuery as well as the Moments.js library to work with date and time.
 
 ## Screenshot Description
 
